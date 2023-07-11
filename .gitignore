@@ -1,0 +1,8 @@
+# Gitignore for Node and React Project
+
+/node_modules
+/build
+/.env
+/logs
+.DS_Store
+
