@@ -1,47 +1,16 @@
-.App {
-    text-align: center;
+.content {
+    transition: transform 0.3s ease-in-out;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+.content.slide {
+    transform: translateX(-5%);
 }
 
-.header div {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 100px;
-    width: auto;
-    margin-right: 10px;
+/* Mobile styles */
+@media (max-width: 768px) {
+    .content.slide {
+        transform: translateX(-20%);
     }
 
-.title {
-    font-size: 100px;
-}
-
-.technicians-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.technicians-table th,
-.technicians-table td {
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-.technicians-table th {
-    font-size: 72px;
-    background-color: #282828;
-}
-
-.technicians-table td {
-    text-align: center;
-    font-size: 48px;
 }
 

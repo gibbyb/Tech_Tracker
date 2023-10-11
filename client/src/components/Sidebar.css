@@ -1,0 +1,86 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;  /* Updated from left to right */
+    height: 100%;
+    width: 5%;
+    background-color: #202020;
+    overflow-x: hidden;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0);
+    z-index: 1000;
+}
+
+.sidebar.closed {
+    transform: translateX(100%); 
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Resets margin */
+}
+
+.sidebar li {
+    padding: 8px;
+    text-align: center;
+    color: white;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.sidebar li:hover {
+    background-color: #333; /* Background color on hover */
+}
+
+.sidebar a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    padding: 8px 0px;
+}
+
+.sidebar a img {
+    width: 60%; /* Adjusts the width of the images */
+    height: auto; /* Maintains aspect ratio */
+    margin: auto; /* Centers the images */
+    display: block; /* Takes the images out of inline flow */
+}
+
+/* New styles for the button */
+.sidebar-toggle-button {
+    position: fixed;
+    margin-top: 30px;
+    right: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.sidebar-toggle-button img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 20%; /* Increase sidebar width on mobile */
+    }
+
+    .sidebar a img {
+        width: 80%; /* Increase icon size on mobile */
+    }
+
+    .sidebar-toggle-button {
+        margin-top: 5px;
+        right: 5px;
+    }
+
+    .sidebar-toggle-button img {
+        width: 40px;
+        height: 40px;
+    }
+}

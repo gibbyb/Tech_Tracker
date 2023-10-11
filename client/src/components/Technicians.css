@@ -1,0 +1,78 @@
+.Technicians {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    margin: 0px;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+    margin-right: 10px;
+    }
+
+.title {
+    font-size: 100px;
+}
+
+.technicians-table {
+    width: 96%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.technicians-table th,
+.technicians-table td {
+    padding: 10px;
+    border: 1px solid rgb(62,68,70);
+}
+
+.technicians-table th {
+    font-size: 48px;
+    background-color: #333333;
+}
+
+.technicians-table td {
+    text-align: center;
+    font-size: 42px;
+}
+
+.technicians-table tr:nth-child(even) {
+    background-color: #222222; 
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 30px; /* Reduce title font size on mobile */
+    }
+
+    .logo {
+        height: 60px; /* Reduce logo size on mobile */
+    }
+
+    .technicians-table th,
+    .technicians-table td {
+        padding: 5px; /* Reduce padding on mobile */
+        font-size: 16px; /* Reduce font size on mobile */
+    }
+
+    .technicians-table th {
+        font-size: 20px; /* Slightly larger font size for headers */
+    }
+}
+
