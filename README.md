@@ -46,7 +46,7 @@ const port = 3000
 
 In the client/package.json file, you need to add a proxy to tell React that Node is running on a separate port. Here is what the file should look like if you used port 3001:
 
-```
+```JSON
 {
   "name": "client",
   "version": "0.1.0",
