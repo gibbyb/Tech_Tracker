@@ -26,9 +26,20 @@ app.use('/api', checkAPIKey);  // Apply API key check to all /api routes
 // Static files
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// Routes
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+
+// List of paths to be handled by your React app
+const reactPaths = [
+    '/',
+    '/update',
+    '/history',
+    // ... any other paths
+];
+
+// Serve index.html for specified React app paths
+reactPaths.forEach(reactPath => {
+    app.get(reactPath, (req, res) => {
+        res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+    });
 });
 
 /* Technicians API */
