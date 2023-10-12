@@ -2,6 +2,8 @@
 
 ## Want to Contribute? Here is what you need to do!
 
+### You can now simply run the host.sh script in the .contribute directory to make most of the changes listed below so that you can host the website yourself. Once complete, you can run the push.sh script to remove those changes so you can push any changes to GitHub!
+
 Follow the below instructions
 
 This project requires a db.js file in this directory. The file will look like this. 
